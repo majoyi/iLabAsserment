@@ -5,9 +5,12 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class RunScript {
-
-	static String sBaseUrl  = "https://www.ilabquality.com/";
+  
+	
 	static String sBrowsers = "edge";
+	// you can Change browsers by chosing which one you want to use 
+  //eg , chrome , edge firefox 
+  static String sBaseUrl  = "https://www.ilabquality.com/";
 	static String sName  = "TestIlab";
 	static String sEmail = "automationAssessment@iLABQuality.com";
 	static String sReasonForApply  = "I want a new challage";

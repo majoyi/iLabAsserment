@@ -18,6 +18,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class stepdefination {
 	
+
+	// Declare variebles to use 
 	static WebDriver driver;
 	//JavascriptExecutor jsExecutor ;
 	static	WebDriverWait wait;
@@ -142,6 +144,7 @@ public class stepdefination {
 
 	 		// Maximize the browser
 	 		// driver.manage().window().maximize();
+			// Use wait for let the brower to be ready 
 	 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	 		driver.manage().window().maximize();
 			
@@ -150,6 +153,7 @@ public class stepdefination {
 
 public void navigateToCareer() throws InterruptedException 
 {
+	// We using by Method to declare our POM
 	  By sCareers = By.xpath("//a[contains(.,'CAREERS')]");
 	  By sSAID = By.linkText("South Africa");
 	  By sFirstCareer = By.partialLinkText("BSC Comput");
@@ -223,6 +227,7 @@ public static void AddClientDetails(String sName ,String sEmail, String sReasonF
 
 public void Quit() 
 {
+	// We are taking the session down 
 	driver.quit();
 	}
 
